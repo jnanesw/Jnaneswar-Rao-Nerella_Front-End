@@ -1,4 +1,4 @@
-# You can Download the above PDF or can open the .md file
+# You can Download the above PDF or open the .md file
 
 # 1. What does the Simple `List` Component do?
 In the given code List is the Component that was wrapping the `WrappedListComponent` using the memo function, that means `List` Component had the same functionalities as `WrappedListComponent` but optimized one, because of using the `memo()`, will reduce the unnecessary re-rendering of the component.   
