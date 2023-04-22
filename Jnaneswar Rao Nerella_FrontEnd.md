@@ -3,7 +3,7 @@ In the given code List is the Component that was wrapping the `WrappedListCompon
 
  The `WrappedListComponent` was acting as a Parent Component which means there is a child Component, which was rendering inside the `WrappedListComponent`. `WrappedListComponent` contains a state (created by using useState Hook), useEffect HOOK, and one component named as handleClick, this parent component renders a list of items using the `SingleListItem` child component by passing all the required props are index, isSelected, onClickHandler, text. And this child component was inside a `map()` function (another higher-order function). 
  
- Every time the `item` gets changed, the SingleListItem Component renders a list.And if the isSelected is `true` then the color of the item was green else red, If there is any click operation on the list item then the slectedIndex will get updated as index through the handleClick Component.`isSelected` have the bool value that tells the list item(`<li>`) selected/Clicked or not. 
+ Every time the `item` gets changed, the SingleListItem Component renders a list.And if the `isSelected` is `true` then the color of the item was green else red, If there is any click operation on the list item then the slectedIndex will get updated as index through the handleClick Component.`isSelected` have the bool value that tells the list item(`<li>`) selected/Clicked or not. 
 
 If there is any click operation on the list items then the `selectedIndex` will be updated as `index` and `isSlected` became true and the background color of the selected list item will change to green.
 
