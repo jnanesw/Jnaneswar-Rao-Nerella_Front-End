@@ -21,7 +21,7 @@ If there is any click operation on the list items then the `selectedIndex` will 
 
 * In the given Code, PropTypes was used for the `WrappedListComponent` and checking that prop was an array and the data type of the items inside the array are string. But the problem is that using the wrong function.
 
-* When using a `map()` function on an array prop, that array prop should not be null else it will throw an error like the map() function doesn't read undefined/null values or array.map() is not a function. So, in `WrappedListComponent.defaultProps` items object was defined as null, And this items object was used inside `WrappedListComponent`.
+* When using a `map()` function on an array prop, that array prop should not be null else it will throw an error like the map() function doesn't read undefined/null values. So, in `WrappedListComponent.defaultProps` items object was defined as null, And this items object was used inside `WrappedListComponent`.
 
 # Modified and Optimized Code: 
 ``` JavaScript
