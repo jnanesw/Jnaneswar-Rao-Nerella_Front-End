@@ -13,9 +13,7 @@ If there is any click operation on the list items then the `selectedIndex` will 
 # 2. What problems/warnings are there with the code?
 * In the `WrappedSingleListItem` component, the `onClick` handler should be a function that calls the `onClickHandler` function with the `index` parameter. 
 
-* `selectedIndex` and `setSelectedIndex` are declared and defined incorrectly using the useState Hook inside the `WrappedListComponent`.
-
-* The first value returned by useState is the current state (`selectedIndex`) and a function to update the state (`setSelectedIndex`). Both are defined oppositely.
+* `selectedIndex` and `setSelectedIndex` are declared and defined incorrectly using the useState Hook inside the `WrappedListComponent`. The first value returned by useState is the current state (`selectedIndex`) and a function to update the state (`setSelectedIndex`). Both are defined oppositely.
 
 * When using a `map()` function and rendering the list of elements, we also should specify the `key` to make the list unique from others. So, we have to add a `key` prop for <SingleListItem /> which resides inside the `WrapSingleListItem` to help React identify each item uniquely.
 
