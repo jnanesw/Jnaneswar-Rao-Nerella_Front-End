@@ -15,7 +15,7 @@ If there is any click operation on the list items then the `selectedIndex` will 
 
 * `selectedIndex` and `setSelectedIndex` are declared and defined incorrectly using the useState Hook inside the `WrappedListComponent`. The first value returned by useState is the current state (`selectedIndex`) and a function to update the state (`setSelectedIndex`). Both are defined oppositely.
 
-* When using a `map()` function and rendering the list of elements, we also should specify the `key` to make the list unique from others. So, we have to add a `key` prop for <SingleListItem /> which resides inside the `WrapSingleListItem` to help React identify each item uniquely.
+* When using a `map()` function and rendering the list of elements, we also should specify the `key` to make the list unique from others. So, we have to add a `key` prop for `<SingleListItem />` which resides inside the `WrapSingleListItem` to help React identify each item uniquely.
 
 * In the `WrappedListComponent` we are passing the `selectedIndex` value which was an integer, to the `isSelected` which accepts only Bool values. Also, PropTypes are mentioned, which will throw an error because of the incompatibility of data type.
 
